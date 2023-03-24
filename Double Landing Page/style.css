@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    display: flex;
+    
+    align-items: center;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+h1{
+    font-size: 100px;
+    backdrop-filter: brightness(0.5);
+    color: aliceblue;
+    letter-spacing: 4px;
+}
+.left{
+    background-color: lightblue;
+    position: absolute;
+    left: 0;
+    background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703724/Croma%20Assets/Communication/Mobiles/Images/261934_qgssvy.png/mxw_2048,s_webp,f_auto");
+    background-size: cover;
+}
+.right{
+    background-color: lightcoral;
+    background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1666992568/Croma%20Assets/Communication/Mobiles/Images/233767_nndowr.png/mxw_2048,s_webp,f_auto");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+.active-right .left{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:burlywood;
+}
+h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    white-space: nowrap;
+}
+.main{
+    text-align: center;
+
+    /* display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; */
+    
+}
+.btn{
+    background-color: pink;
+    border: none;
+    padding: 30px 50px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0, 0, 0.3);
+    font-size: 20px;
+    font-family: cursive;
+    background-image: url("Images/crash.png");
+    background-size: cover;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn:hover{
+    filter: brightness(0.9);
+}
+.btn:active{
+    background-size: 105%;
+}
